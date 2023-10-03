@@ -1,1 +1,15 @@
-<p>Aca va un empleado</p>
+<p>Nombre del empleado
+{{nombre}}
+</p>
+<p>Apellido del empleado
+    {{apellido}}
+    </p>
+    <p>Edad del empleado
+        {{edad}}
+        </p>
+        <p>
+            empresa de empleado: {{empresa.value}}
+        </p>
+
+    
+       introduce la empresa: <input type="text" #empresa (keyup)="0" >
