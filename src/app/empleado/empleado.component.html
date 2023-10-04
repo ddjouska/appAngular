@@ -8,8 +8,13 @@
         {{edad}}
         </p>
         <p>
-            empresa de empleado: {{empresa.value}}
+            empresa de empleado: {{empresa}}
         </p>
 
     
-       introduce la empresa: <input type="text" #empresa (keyup)="0" >
+       introduce la empresa: <input type="text" [(ngModel)]="empresa" >
+       <br>
+       <br>
+       {{textoDeRegistro}} <br>
+       Registrado <input type="checkbox" id = "registro" [checked]="usuRegistrado" (click)="setUsuarioRegistrado()">
+       {{getRegistroUsuario()}}

@@ -10,5 +10,14 @@ nombre = "Juan";
 apellido = "Diaz";
 edad = 32;
 empresa = "Superempresa"
-
+habilitacionCuadro=false;
+usuRegistrado=true;
+textoDeRegistro="No hay nadie registrado";
+getRegistroUsuario(){
+  this.usuRegistrado=false
+}
+setUsuarioRegistrado(){
+  //alert("El usuario se acaba de registrar")
+this.textoDeRegistro="El usuario se acaba de registrar"
+}
 }
